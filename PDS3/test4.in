@@ -1,0 +1,11 @@
+INIT 2 0
+OPEN Hospital Branch 0
+REL_OPEN HospBranchRel 0
+SEARCH Hospital 10 0 Global_Health MG_Road global@health.com
+SEARCH Branch 200 0 Orthopedics Block_A ortho@global.com
+REL_SEARCH 10 0 Orthopedics Block_A ortho@global.com
+REL_DELETE Hospital 10 0
+REL_SEARCH 10 1
+REL_UNDELETE Hospital 10 0
+REL_SEARCH 10 0 Orthopedics Block_A ortho@global.com
+CLOSE 0

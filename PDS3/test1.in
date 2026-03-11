@@ -1,0 +1,28 @@
+INIT 2 0
+CREATE Hospital Branch 0
+OPEN Hospital Branch 0
+STORE Hospital 1 0 City_General Downtown citygen@health.com
+STORE Hospital 2 0 Mayo_Clinic Rochester mayo@clinic.com
+STORE Hospital 3 0 Apollo_Hospital Jubilee apollo@health.com
+STORE Branch 101 0 Cardiology Floor_2 cardio@citygen.com
+STORE Branch 102 0 Neurology Floor_3 neuro@citygen.com
+STORE Branch 103 0 ICU Floor_1 icu@mayo.com
+SEARCH Hospital 1 0 City_General Downtown citygen@health.com
+SEARCH Hospital 2 0 Mayo_Clinic Rochester mayo@clinic.com
+SEARCH Hospital 3 0 Apollo_Hospital Jubilee apollo@health.com
+SEARCH Branch 101 0 Cardiology Floor_2 cardio@citygen.com
+SEARCH Branch 102 0 Neurology Floor_3 neuro@citygen.com
+SEARCH Branch 103 0 ICU Floor_1 icu@mayo.com
+UPDATE Hospital 2 0 Mayo_Updated Rochester_NY mayo_new@clinic.com
+SEARCH Hospital 2 0 Mayo_Updated Rochester_NY mayo_new@clinic.com
+UPDATE Branch 101 0 Cardiology_Advanced Floor_2A cardio_adv@citygen.com
+SEARCH Branch 101 0 Cardiology_Advanced Floor_2A cardio_adv@citygen.com
+DELETE Hospital 3 0
+SEARCH Hospital 3 1
+DELETE Branch 103 0
+SEARCH Branch 103 1
+UNDELETE Hospital 3 0
+SEARCH Hospital 3 0 Apollo_Hospital Jubilee apollo@health.com
+UNDELETE Branch 103 0
+SEARCH Branch 103 0 ICU Floor_1 icu@mayo.com
+CLOSE 0

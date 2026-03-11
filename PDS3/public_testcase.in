@@ -1,0 +1,9 @@
+OPEN Hosp Branch 0
+REL_OPEN Staff_Rel 0
+STORE Hosp 1 0 General_Hospital City_Center gen@hosp.com
+STORE Branch 101 0 Pharmacy Block_G pharm@hosp.com
+STORE Branch 102 0 Radiology Block_H rad@hosp.com
+REL_STORE 1 101 0
+REL_STORE 1 102 0
+REL_SEARCH 1 0 Pharmacy Block_G pharm@hosp.com
+CLOSE 0

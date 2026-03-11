@@ -1,0 +1,17 @@
+INIT 2 0
+OPEN Hospital Branch 0
+SEARCH Hospital 1 0 City_General Downtown citygen@health.com
+SEARCH Hospital 2 0 Mayo_Updated Rochester_NY mayo_new@clinic.com
+SEARCH Hospital 3 0 Apollo_Hospital Jubilee apollo@health.com
+SEARCH Branch 101 0 Cardiology_Advanced Floor_2A cardio_adv@citygen.com
+SEARCH Branch 102 0 Neurology Floor_3 neuro@citygen.com
+SEARCH Branch 103 0 ICU Floor_1 icu@mayo.com
+DELETE Hospital 1 0
+SEARCH Hospital 1 1
+DELETE Branch 102 0
+SEARCH Branch 102 1
+UNDELETE Hospital 1 0
+SEARCH Hospital 1 0 City_General Downtown citygen@health.com
+UNDELETE Branch 102 0
+SEARCH Branch 102 0 Neurology Floor_3 neuro@citygen.com
+CLOSE 0
